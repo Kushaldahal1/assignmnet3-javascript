@@ -1,0 +1,154 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+  background-color: #e0a224; 
+  color: #21d548; /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+main {
+  width: 90%;
+  max-width: 600px;
+  background-color: #e17217; /* Slightly lighter background */
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(201, 16, 16, 0.4);
+  text-align: center;
+}
+
+/* Logo */
+.todo-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #131212; /*black title*/
+}
+
+/* Input and Add Button Container */
+div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e3ddca;
+  color: #0d0d0d;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #141415; /* placeholder */
+}
+
+/* Add Button Styles */
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d5a235; /* Blue button */
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #bf9450; 
+  transform: scale(1.05);
+}
+
+/* Task List Styles */
+ul {
+  margin: 0;
+  padding: 10px 15px;
+  list-style: none;
+  background-color: #c17d39; /* Slightly lighter list background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(166, 193, 47, 0.2);
+}
+
+/* List Item Styles */
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #83883c; /* item background */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover {
+  background-color: #303439; /* Highlight on hover */
+  transform: translateX(5px);
+}
+
+/* Checkbox Styles */
+.checkBox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #b79d65; /* Green accent */
+  cursor: pointer;
+}
+
+/* Paragraph Styles */
+ul li p {
+  margin: 0;
+  flex: 1;
+  color: #0d0d0d;
+  font-size: 16px;
+}
+
+/* Delete Button Styles */
+.deleteButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff0000; /* Red button */
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  background-color: #B91C1C; /* Darker red */
+  transform: scale(1.1);
+}
+
+/* Checked Items */
+.checked {
+  background-color: #22C55E; /* Light green */
+  color: white;
+  text-decoration: line-through;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Deleted Items */
+.deleted {
+  background-color: #DC2626; /* Red fade-out */
+  color: rgb(28, 26, 26);
+  opacity: 0;
+  transition: opacity 1s ease, background-color 1s ease;
+}
